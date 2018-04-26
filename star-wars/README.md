@@ -98,6 +98,8 @@ And obtain the expected chronological order:
         The Force Awakens (2015),
         The Last Jedi (2017)
     ]
+    
+Write the code in order to make it generic. Implement the feature of ordering one array according to another one, the Star Wars is just an instance of that feature.
 
 [1]: https://en.wikipedia.org/wiki/Star_Wars
 [2]: http://www.digitalspy.com/movies/star-wars/feature/a825727/star-wars-timeline-chronology-phantom-menace-to-last-jedi/
