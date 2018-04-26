@@ -44,7 +44,7 @@ For the purpose of the exercise, we are going to consider the given array, with 
 
 Then we have and auxiliary array which defines the chronological order, according with the plot of the movies.
 
-    [1, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10]
+    [4, 5, 6, 10, 8, 1 ,2 ,3 ,7, 9]
 
 This indicates the correct order if we want to see the movies chronologically. If we apply the order on the second array to the first one, the expected result is the following (according to [this site][2]):
 
@@ -82,7 +82,7 @@ Take the original array:
     
 Use the order array: 
 
-    [1, 2, 3, 4, 5, 6 ,7 ,8 ,9, 10]
+    [4, 5, 6, 10, 8, 1 ,2 ,3 ,7, 9]
     
 And obtain the expected chronological order:
 
