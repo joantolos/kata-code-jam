@@ -18,3 +18,10 @@ An example of bubble sort. Starting from the beginning of the list, compare ever
 
 ## The exercise
 
+Implement a function that receives a number array and returns the array sorted ascendant. Like:
+
+    [5, 7, 10, 11, 12, 3, 9, 101]
+
+Should return:
+
+    [3, 5, 7, 9, 10, 11, 12, 101]
