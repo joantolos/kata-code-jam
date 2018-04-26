@@ -1,5 +1,6 @@
-package com.joantolos.kata.code.jam
+package com.joantolos.kata.code.jam.star.wars
 
+import com.joantolos.kata.code.jam.star.wars.Sorter
 import spock.lang.Shared
 import spock.lang.Specification
 

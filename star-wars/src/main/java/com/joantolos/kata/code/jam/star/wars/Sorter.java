@@ -1,4 +1,4 @@
-package com.joantolos.kata.code.jam;
+package com.joantolos.kata.code.jam.star.wars;
 
 import java.util.ArrayList;
 import java.util.Arrays;
