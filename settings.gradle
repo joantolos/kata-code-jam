@@ -1,0 +1,3 @@
+rootProject.name = 'kata-code-jam'
+
+include 'star-wars', 'bubble-sort'

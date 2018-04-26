@@ -1,0 +1,48 @@
+group 'com.joantolos.kata.code.jam'
+
+apply plugin: 'java'
+apply plugin: "groovy"
+apply plugin: "jacoco"
+
+dependencies {
+    compile "org.codehaus.groovy:groovy-all:2.2.2"
+    compile group: 'org.apache.commons', name: 'commons-io', version: '1.3.2'
+}
+
+allprojects {
+    version '1.0'
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    apply plugin: 'java'
+    apply plugin: 'jacoco'
+
+    repositories {
+        jcenter()
+    }
+
+    jacoco {
+        toolVersion = "0.7.6+"
+        reportsDir = file("${project.buildDir}/jacoco/reports")
+    }
+
+    jacocoTestReport {
+        reports {
+            xml.enabled false
+            csv.enabled false
+            html.destination "${buildDir}/jacoco/reports/coverage/html"
+        }
+
+        afterEvaluate {
+            classDirectories = files(classDirectories.files.collect {
+                fileTree(dir: it,
+                        exclude: ['com/joantolos/kata/code/jam/CodeJam*'])
+            })
+        }
+    }
+
+    dependencies {
+        testCompile "org.spockframework:spock-core:1.1-groovy-2.4-rc-2"
+    }
+
+}
