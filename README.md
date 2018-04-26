@@ -1,5 +1,7 @@
 # Kata Code Jam
 
+![Kata](kata.gif)
+
 These are a compilation of several code exercises that I have found interesting.
 
 ## Exercises
