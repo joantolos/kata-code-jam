@@ -54,6 +54,19 @@ Notice the pipes, the commas, the slash and the fact that some prefixes (PAGE, V
 </ul>
 <p>&nbsp;</p>
 
+Iterating the result list, we can build the proper html:
+
+    <h2 style="color: #2e6c80;">Quotes:</h2>
+    <ul>
+    <li>There is some good in this world, and it&rsquo;s worth fighting for. &ndash; J.R.R. Tolkien, The Two Towers. VOLUME: 1 | ISSUE: 1 | PAGE: 137</li>
+    <li>Get busy living, or get busy dying. &ndash; Stephen King, Different Seasons. PAGE: 94</li>
+    <li>Who, being loved, is poor? &ndash; Oscar Wilde, A Woman of No Importance. VOLUME: 2 | PAGE: 30</li>
+    <li>Every human life is worth the same, and worth saving. &ndash; J.K. Rowling, Harry Potter and the Deathly Hallows. VOLUME: 7 | ISSUE: 2 | PAGE: 83</li>
+    </ul>
+    <p>&nbsp;</p>
+    
+Write a function on Javascript that given the first array, it returns the second one.    
+
 ## Running tests
 
 Install the dependencies:
