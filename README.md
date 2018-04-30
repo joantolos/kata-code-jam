@@ -1,6 +1,6 @@
 # Kata Code Jam
 
-![Kata](kata.gif)[4]
+![Kata](kata.gif)
 
 These are a compilation of several code exercises that I have found interesting. These are simple algorithmic problems, the goal is not the design of a complex software but just the technique to solve classical computer science problems.
 
