@@ -52,7 +52,6 @@ Notice the pipes, the commas, the slash and the fact that some prefixes (PAGE, V
 <li>Who, being loved, is poor? &ndash; Oscar Wilde, A Woman of No Importance. VOLUME: 2 | PAGE: 30</li>
 <li>Every human life is worth the same, and worth saving. &ndash; J.K. Rowling, Harry Potter and the Deathly Hallows. VOLUME: 7 | ISSUE: 2 | PAGE: 83</li>
 </ul>
-<p>&nbsp;</p>
 
 Iterating the result list, we can build the proper html:
 
@@ -63,7 +62,6 @@ Iterating the result list, we can build the proper html:
     <li>Who, being loved, is poor? &ndash; Oscar Wilde, A Woman of No Importance. VOLUME: 2 | PAGE: 30</li>
     <li>Every human life is worth the same, and worth saving. &ndash; J.K. Rowling, Harry Potter and the Deathly Hallows. VOLUME: 7 | ISSUE: 2 | PAGE: 83</li>
     </ul>
-    <p>&nbsp;</p>
     
 Write a function on Javascript that given the first array, it returns the second one.    
 
