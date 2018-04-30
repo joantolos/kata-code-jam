@@ -29,7 +29,7 @@ The Star Wars movies can be classified as trilogies (which includes the original
 * Rogue One: A Star Wars Story (2016)
 * Solo: A Star Wars Story (2018)
 
-For the purpose of the exercise, we are going to consider the given array, with the movies arranged by chronological order (notice the release year at the end of the name):
+For the purpose of the exercise, we are going to consider the given array, with the movies arranged by release order (notice the release year at the end of the name):
 
     [
         A New Hope (1977), 
