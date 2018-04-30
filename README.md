@@ -8,7 +8,7 @@ These are a compilation of several code exercises that I have found interesting.
 
 - [_Bubble Sort Algorithm_][1] - Implementation of the Bubble Sort Algorithm.
 - [_Star Wars Movies Order_][2] - Ordering the Star Wars movies from the release date to chronologically.
-- [_Javascript TDD Seed_][3] - Little seed that facilitates a minimum framework to do TDD on Javascript.- [_Javascript TDD Seed_][3] - Little seed that facilitates a minimum framework to do TDD on Javascript.
+- [_Javascript TDD Seed_][3] - Little seed that facilitates a minimum framework to do TDD on Javascript.
 - [_String Composer_][4] - String manipulation casuistic with Javascript
 
 [1]: https://github.com/joantolos/kata-code-jam/tree/master/bubble-sort
