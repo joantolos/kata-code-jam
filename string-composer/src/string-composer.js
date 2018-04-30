@@ -1,5 +1,5 @@
-const greetings = () => {
-  return 'Hi there!';
+const createQuote = (input) => {
+  return input;
 };
 
-exports.greetings = greetings;
+exports.createQuote = createQuote;

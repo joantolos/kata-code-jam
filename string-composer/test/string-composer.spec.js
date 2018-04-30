@@ -1,11 +1,11 @@
-const greetingsProvider = require('../src/string-composer');
+const stringComposer = require('../src/string-composer');
 const chai = require('chai');
 const expect = chai.expect;
 
-describe('The Greetings Provider is able to', () => {
+describe('The String Composer is able to', () => {
   
-  it('salute', () => {
-    expect(greetingsProvider.greetings()).to.be.equal('Hi there!');
+  it('format a list of quotes ready to print on HTML', () => {
+    expect(stringComposer.createQuote(require('./bookQuotes/input.json'))).to.be.equal(require('./bookQuotes/input.json'));
   });
 
 });

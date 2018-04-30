@@ -7,7 +7,7 @@ We have a JSON with information about an specific quote from a book, but the inf
           "description":"There is some good in this world, and it’s worth fighting for.",
           "author":"J.R.R. Tolkien",
           "book":"The Two Towers.",
-          "vol":"1",
+          "vol":"2",
           "issue":"1",
           "page":"137"
        },
@@ -37,7 +37,7 @@ We have a JSON with information about an specific quote from a book, but the inf
 Sometimes we don't know the exact issue, volume or page. Either way, we want to transform that data structure into single lines to print on a html file, like this:
 
     "output":[
-       "There is some good in this world, and it’s worth fighting for. – J.R.R. Tolkien, The Two Towers. VOLUME: 1 | ISSUE: 1 | PAGE: 137",
+       "There is some good in this world, and it’s worth fighting for. – J.R.R. Tolkien, The Two Towers. VOLUME: 2 | ISSUE: 1 | PAGE: 137",
        "Get busy living, or get busy dying. – Stephen King, Different Seasons. PAGE: 94",
        "Who, being loved, is poor? – Oscar Wilde, A Woman of No Importance. VOLUME: 2 | PAGE: 30",
        "Every human life is worth the same, and worth saving. – J.K. Rowling, Harry Potter and the Deathly Hallows. VOLUME: 7 | ISSUE: 2 | PAGE: 83"
