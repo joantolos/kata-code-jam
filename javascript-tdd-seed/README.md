@@ -1,6 +1,6 @@
 # Javascript TDD seed
 
-![Seed](seed.png)
+![Seed](seed.jpg)
 
 This is a simple project seed in order to code TDD on Javascript. It includes the Mocha, Chai and Lint framework combination to easily work with TDD and javascript.
 
