@@ -1,0 +1,50 @@
+{
+  "name": "igr-backend-knowledge-area",
+  "version": "0.0.1",
+  "main": "src/index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules .yarnclean yarn.lock .gradle",
+    "link": "./node_modules/.bin/linklocal -r",
+    "lint": "./node_modules/.bin/eslint --fix src test",
+    "test": "npm run lint &&  cross-env CONF_DIR=./test/eiddo CLOUD_ENVIRONMENT=dev CLOUD_DEV_PHASE=snapshot node_modules/.bin/nyc node_modules/.bin/mocha  --bail --exit --recursive --timeout 10000 --bail test/**/*.spec.js",
+    "build": "npm run test && npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomsonReuters-IPS/igr-backend.git"
+  },
+  "publishConfig": {
+    "registry": "http://repo.oneplatform.build/nexus/content/repositories/npm-private/"
+  },
+  "keywords": [
+    "Node",
+    "Component",
+    "AWS environment"
+  ],
+  "author": "David Cobo <didvae@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomsonReuters-IPS/igr-backend/issues"
+  },
+  "homepage": "https://github.com/ThomsonReuters-IPS/igr-backend",
+  "devDependencies": {
+    "igr-backend-remote": "file:../igr-backend-remote",
+    "igr-backend-utils": "file:../igr-backend-utils",
+    "chai": "4.1.2",
+    "cross-env": "^5.1.4",
+    "eslint": "4.18.0",
+    "igr-component-test": "0.0.6",
+    "node-component-eiddo": "0.0.5",
+    "mocha": "4.1.0",
+    "nyc": "11.5.0",
+    "linklocal": "2.8.2"
+  },
+  "dependencies": {
+    "lodash": "4.17.5",
+    "node-component-logger": "0.2.2"
+  },
+  "peerDependencies": {
+    "igr-backend-remote": "file:../igr-backend-remote",
+    "igr-backend-utils": "file:../igr-backend-utils"
+  }
+}
