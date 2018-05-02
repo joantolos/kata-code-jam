@@ -1,0 +1,33 @@
+{
+  "input": [
+    {
+      "description": "There is some good in this world, and it’s worth fighting for.",
+      "author": "J.R.R. Tolkien",
+      "book": "The Two Towers.",
+      "vol": "2",
+      "issue": "1",
+      "page": "137"
+    },
+    {
+      "description": "Get busy living, or get busy dying.",
+      "author": "Stephen King",
+      "book": "Different Seasons.",
+      "page": "94"
+    },
+    {
+      "description": "Who, being loved, is poor?",
+      "author": "Oscar Wilde",
+      "book": "A Woman of No Importance.",
+      "vol": "2",
+      "page": "30"
+    },
+    {
+      "description": "Every human life is worth the same, and worth saving.",
+      "author": "J.K. Rowling",
+      "book": "Harry Potter and the Deathly Hallows.",
+      "vol": "7",
+      "issue": "2",
+      "page": "83"
+    }
+  ]
+}
