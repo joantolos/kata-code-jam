@@ -10,7 +10,7 @@ These are a compilation of several code exercises that I have found interesting.
 - [_Star Wars Movies Order_][2] - Ordering the Star Wars movies from the release date to chronologically.
 - [_Book Quote Builder_][3] - JSON manipulation casuistic with Javascript
 - [_Meet Up Parser_][4] - Anoter JSON manipulation casuistic with Javascript
-- [_Barcelona Grand Prix_][4] - Yet another JSON manipulation casuistic with Javascript
+- [_Barcelona Grand Prix_][5] - Yet another JSON manipulation casuistic with Javascript
 
 [1]: https://github.com/joantolos/kata-code-jam/tree/master/bubble-sort
 [2]: https://github.com/joantolos/kata-code-jam/tree/master/star-wars
