@@ -5,19 +5,18 @@ import spock.lang.Specification
 
 class GroupBySpec extends Specification {
 
-    @Shared Map<String, Integer> scores
+    @Shared scores = [:]
     @Shared GroupBy groupBy
 
     def setupSpec() {
         groupBy = new GroupBy()
-        scores = new HashMap<>()
 
-        scores.put("Jack", 12)
-        scores.put("Jill", 15)
-        scores.put("Tom", 11)
-        scores.put("Darla", 15)
-        scores.put("Nick", 15)
-        scores.put("Nancy", 11)
+        scores['Jack'] = 12
+        scores['Jill'] = 15
+        scores['Tom'] = 11
+        scores['Darla'] = 15
+        scores['Nick'] = 15
+        scores['Nancy'] = 11
     }
 
     def 'Tom and Nancy must have 11 score'() {
