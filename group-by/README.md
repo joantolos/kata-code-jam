@@ -2,7 +2,7 @@
 
 Take the given map of scores and show the people who has the most score ordered ascendant
 
-##Example:
+## Example:
 The following input map:
 
     "Jack" -> 12
