@@ -1,7 +1,8 @@
 const pageSize = 5;
 
 const changePage = (page) => {
-  return theFIFACocaColaWorldRanking.slice(page - 1, pageSize);
+  page = page - 1;
+  return theFIFACocaColaWorldRanking.slice(page, page + pageSize);
 };
 
 module.exports = {
