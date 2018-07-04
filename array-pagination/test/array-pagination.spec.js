@@ -33,6 +33,12 @@ describe('Array pagination', () => {
       totalPoints: 1135,
       previousPoints: 1146,
       position: 0
+    },
+    {
+      team: 'Spain',
+      totalPoints: 1126,
+      previousPoints: 1162,
+      position: 2
     });
   });
 
