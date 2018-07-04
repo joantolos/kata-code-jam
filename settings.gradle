@@ -1,3 +1,10 @@
 rootProject.name = 'kata-code-jam'
 
-include 'star-wars', 'bubble-sort', 'book-quote-builder', 'meet-up-parser', 'barcelona-grand-prix', 'group-by', 'uuid'
+include 'star-wars',
+        'bubble-sort',
+        'book-quote-builder',
+        'meet-up-parser',
+        'barcelona-grand-prix',
+        'group-by',
+        'uuid',
+        'array-pagination'
