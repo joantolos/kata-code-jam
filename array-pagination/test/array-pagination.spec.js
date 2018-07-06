@@ -75,35 +75,35 @@ describe('Array pagination', () => {
   it('third page should return the proper five', () => {
     expect(arrayPagination.changePage(3)).to.have.length(5);
     expect(arrayPagination.changePage(3)).to.deep.include({
-        team: 'Peru',
-        totalPoints: 1125,
-        previousPoints: 1106,
-        position: 0
-      },
-      {
-        team: 'Denmark',
-        totalPoints: 1051,
-        previousPoints: 1054,
-        position: 0
-      },
-      {
-        team: 'England',
-        totalPoints: 1051,
-        previousPoints: 1040,
-        position: 1
-      },
-      {
-        team: 'Uruguay',
-        totalPoints: 1018,
-        previousPoints: 976,
-        position: 3
-      },
-      {
-        team: 'Mexico',
-        totalPoints: 989,
-        previousPoints: 1008,
-        position: 0
-      });
+      team: 'Peru',
+      totalPoints: 1125,
+      previousPoints: 1106,
+      position: 0
+    },
+    {
+      team: 'Denmark',
+      totalPoints: 1051,
+      previousPoints: 1054,
+      position: 0
+    },
+    {
+      team: 'England',
+      totalPoints: 1051,
+      previousPoints: 1040,
+      position: 1
+    },
+    {
+      team: 'Uruguay',
+      totalPoints: 1018,
+      previousPoints: 976,
+      position: 3
+    },
+    {
+      team: 'Mexico',
+      totalPoints: 989,
+      previousPoints: 1008,
+      position: 0
+    });
   });
 
   it('tenth page should return the last five', () => {
