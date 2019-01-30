@@ -1,5 +1,6 @@
 package com.joantolos.kata.code.jam.bubble
 
+import com.joantolos.kata.codeJam.Sorter
 import spock.lang.Shared
 import spock.lang.Specification
 

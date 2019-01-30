@@ -1,4 +1,4 @@
-package com.joantolos.kata.code.jam.bubble;
+package com.joantolos.kata.codeJam;
 
 public class Sorter {
 
