@@ -2,8 +2,6 @@
 
 ## A little context
 
-![Star Wars Logo](starwars.png)
-
 The Star Wars movies can be classified as trilogies (which includes the original trilogy, the prequel trilogy and the sequel trilogy) and the anthology films ([source wikipedia][1]).
 
 ##### Trilogies:

@@ -124,13 +124,4 @@ Iterating the result list, we can build the proper html:
     <li>IBM Think · 2018-03-19 · Nevada, United States</li>
     </ul>
     
-Write a function on Javascript that given the first array, it returns the second one.
-## Running tests
-
-Install the dependencies:
-
-    yarn install
-
-Run the tests:
-
-    yarn test
+Write a function on whatever language you prefer that given the first array, it returns the second one.
