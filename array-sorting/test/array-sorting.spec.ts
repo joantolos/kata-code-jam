@@ -79,13 +79,13 @@ describe('Sorter', () => {
   });
 
   it('by dynamic list of columns by default sorting', () => {
-    const noCaseNameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, null);
-    expect(noCaseNameWithAscendantQuantityTieBreaker[0].name).toBe('apple');
-    expect(noCaseNameWithAscendantQuantityTieBreaker[0].quantity).toBe(7);
-    expect(noCaseNameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
-    expect(noCaseNameWithAscendantQuantityTieBreaker[1].quantity).toBe(3);
-    expect(noCaseNameWithAscendantQuantityTieBreaker[2].name).toBe('Apple');
-    expect(noCaseNameWithAscendantQuantityTieBreaker[2].quantity).toBe(2);
+    const defaultSorting = sorter.applyOrder(fruits, null);
+    expect(defaultSorting[0].name).toBe('apple');
+    expect(defaultSorting[0].quantity).toBe(7);
+    expect(defaultSorting[1].name).toBe('Apple');
+    expect(defaultSorting[1].quantity).toBe(3);
+    expect(defaultSorting[2].name).toBe('Apple');
+    expect(defaultSorting[2].quantity).toBe(2);
   });
 
 });
