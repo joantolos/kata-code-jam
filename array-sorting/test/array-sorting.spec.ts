@@ -1,11 +1,39 @@
 // @ts-ignore
-import { Sorter } from '../src/array-sorting';
+import {Sorter} from '../src/array-sorting';
 
 let sorter: Sorter;
+let fruits;
 
 describe('Sorter', () => {
   beforeEach(() => {
     sorter = new Sorter();
+    fruits = [
+      {
+        name: 'Apple',
+        color: 'Yellow',
+        quantity: 2
+      },
+      {
+        name: 'Tomato',
+        color: 'Red',
+        quantity: 5
+      },
+      {
+        name: 'Orange',
+        color: 'Orange',
+        quantity: 3
+      },
+      {
+        name: 'Apple',
+        color: 'Red',
+        quantity: 3
+      },
+      {
+        name: 'apple',
+        color: 'Red',
+        quantity: 7
+      }
+    ];
   });
 
   it('should be created', () => {
@@ -13,73 +41,51 @@ describe('Sorter', () => {
   });
 
   it('by dynamic list of columns ascending and descending with no repeats', () => {
-    const fruits = [
-      {
-        name: 'Apple',
-        color: 'Red',
-        quantity: 3
-      },
-      {
-        name: 'Banana',
-        color: 'Yellow',
-        quantity: 2
-      },
-      {
-        name: 'Tomato',
-        color: 'Red',
-        quantity: 5
-      },
-      {
-        name: 'Orange',
-        color: 'Orange',
-        quantity: 6
-      }
-    ];
-
     const fruitsSortedByQuantityAsc = sorter.applyOrder(fruits, 'quantity:asc');
-    expect(fruitsSortedByQuantityAsc[0].name).toBe('Banana');
-    expect(fruitsSortedByQuantityAsc[1].name).toBe('Apple');
-    expect(fruitsSortedByQuantityAsc[2].name).toBe('Tomato');
-    expect(fruitsSortedByQuantityAsc[3].name).toBe('Orange');
+    expect(fruitsSortedByQuantityAsc[0].name).toBe('Apple');
+    expect(fruitsSortedByQuantityAsc[1].name).toBe('Orange');
+    expect(fruitsSortedByQuantityAsc[2].name).toBe('Apple');
+    expect(fruitsSortedByQuantityAsc[3].name).toBe('Tomato');
 
     const fruitsSortedByQuantity = sorter.applyOrder(fruits, 'quantity:desc');
-    expect(fruitsSortedByQuantity[0].name).toBe('Orange');
+    expect(fruitsSortedByQuantity[0].name).toBe('apple');
     expect(fruitsSortedByQuantity[1].name).toBe('Tomato');
-    expect(fruitsSortedByQuantity[2].name).toBe('Apple');
-    expect(fruitsSortedByQuantity[3].name).toBe('Banana');
+    expect(fruitsSortedByQuantity[2].name).toBe('Orange');
+    expect(fruitsSortedByQuantity[3].name).toBe('Apple');
   });
 
   it('by dynamic list of columns ascending and descending with repeats', () => {
-    const fruits = [
-      {
-        name: 'Apple',
-        color: 'Red',
-        quantity: 3
-      },
-      {
-        name: 'Apple',
-        color: 'Yellow',
-        quantity: 2
-      },
-      {
-        name: 'Tomato',
-        color: 'Red',
-        quantity: 5
-      },
-      {
-        name: 'Orange',
-        color: 'Orange',
-        quantity: 3
-      }
-    ];
+    const nameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:asc');
+    expect(nameWithAscendantQuantityTieBreaker[0].name).toBe('Apple');
+    expect(nameWithAscendantQuantityTieBreaker[0].quantity).toBe(2);
+    expect(nameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
+    expect(nameWithAscendantQuantityTieBreaker[1].quantity).toBe(3);
 
-    const fruitsSortedByNameWithQuantityTieBreaker = sorter.applyOrder(fruits, 'mame:asc,quantity:asc,color:asc');
-    expect(fruitsSortedByNameWithQuantityTieBreaker[0].name).toBe('Apple');
-    expect(fruitsSortedByNameWithQuantityTieBreaker[0].quantity).toBe(2);
-    expect(fruitsSortedByNameWithQuantityTieBreaker[1].name).toBe('Orange');
-    expect(fruitsSortedByNameWithQuantityTieBreaker[1].quantity).toBe(3);
-    expect(fruitsSortedByNameWithQuantityTieBreaker[2].name).toBe('Apple');
-    expect(fruitsSortedByNameWithQuantityTieBreaker[3].name).toBe('Tomato');
+    const nameWithDescendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:desc');
+    expect(nameWithDescendantQuantityTieBreaker[0].name).toBe('apple');
+    expect(nameWithDescendantQuantityTieBreaker[0].quantity).toBe(7);
+    expect(nameWithDescendantQuantityTieBreaker[1].name).toBe('Apple');
+    expect(nameWithDescendantQuantityTieBreaker[1].quantity).toBe(3);
+  });
+
+  it('by dynamic list of columns ascending and descending with repeats, ignoring case', () => {
+    const noCaseNameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:desc,color:asc');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[0].name).toBe('apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[0].quantity).toBe(7);
+    expect(noCaseNameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[1].quantity).toBe(3);
+    expect(noCaseNameWithAscendantQuantityTieBreaker[2].name).toBe('Apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[2].quantity).toBe(2);
+  });
+
+  it('by dynamic list of columns by default sorting', () => {
+    const noCaseNameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, null);
+    expect(noCaseNameWithAscendantQuantityTieBreaker[0].name).toBe('apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[0].quantity).toBe(7);
+    expect(noCaseNameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[1].quantity).toBe(3);
+    expect(noCaseNameWithAscendantQuantityTieBreaker[2].name).toBe('Apple');
+    expect(noCaseNameWithAscendantQuantityTieBreaker[2].quantity).toBe(2);
   });
 
 });
