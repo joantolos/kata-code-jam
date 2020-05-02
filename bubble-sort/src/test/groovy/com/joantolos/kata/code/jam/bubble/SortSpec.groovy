@@ -1,14 +1,14 @@
 package com.joantolos.kata.code.jam.bubble
 
-import com.joantolos.kata.codeJam.Sorter
+import com.joantolos.kata.codeJam.SorterProvider
 import spock.lang.Shared
 import spock.lang.Specification
 
 class SortSpec extends Specification {
 
-    @Shared Sorter sorter
+    @Shared SorterProvider sorter
     def setupSpec() {
-        sorter = new Sorter()
+        sorter = new SorterProvider()
     }
 
     def 'Should sort the integer list'() {

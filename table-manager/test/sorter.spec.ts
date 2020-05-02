@@ -1,5 +1,5 @@
 // @ts-ignore
-import {Sorter} from '../src/array-sorting';
+import {Sorter} from '../src/sorter.provider';
 
 let sorter: Sorter;
 let fruits;

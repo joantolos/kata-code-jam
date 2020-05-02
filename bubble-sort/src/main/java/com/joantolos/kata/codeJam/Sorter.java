@@ -1,6 +1,6 @@
 package com.joantolos.kata.codeJam;
 
-public class Sorter {
+public class SorterProvider {
 
     public Integer[] bubble(Integer[] target) {
         for (int outer = 0; outer < target.length; outer++) {

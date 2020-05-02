@@ -14,7 +14,7 @@ These are a compilation of several code exercises that I have found interesting.
 - [_Grouping By_][6] - Using Collectors from Stream API
 - [_UUID Javascript_][7] - UUID generation with Javascript
 - [_Array pagination_][8] - Pagination simulation of an array with Javascript
-- [_Array sorting_][9] - Sorting simulation of an array with Javascript
+- [_Table manager_][9] - Sorting and table pagination simulation of an array with Typescript
 
 [1]: https://github.com/joantolos/kata-code-jam/tree/master/bubble-sort
 [2]: https://github.com/joantolos/kata-code-jam/tree/master/star-wars
@@ -24,4 +24,4 @@ These are a compilation of several code exercises that I have found interesting.
 [6]: https://github.com/joantolos/kata-code-jam/tree/master/group-by
 [7]: https://github.com/joantolos/kata-code-jam/tree/master/uuid
 [8]: https://github.com/joantolos/kata-code-jam/tree/master/array-pagination
-[9]: https://github.com/joantolos/kata-code-jam/tree/master/array-sorting
+[9]: https://github.com/joantolos/kata-code-jam/tree/master/table-manager

@@ -30,7 +30,6 @@ allprojects {
         reports {
             xml.enabled false
             csv.enabled false
-            html.destination "${buildDir}/jacoco/reports/coverage/html"
         }
 
         afterEvaluate {
