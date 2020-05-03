@@ -1,5 +1,5 @@
 TN:
-SF:/Users/joan/Documents/code/joantolos/kata-code-jam/array-sorting/src/paginator.provider.ts
+SF:/Users/joan/Documents/code/joantolos/kata-code-jam/table-manager/src/paginator.provider.ts
 FN:3,(anonymous_0)
 FN:6,(anonymous_1)
 FN:13,(anonymous_2)
@@ -22,7 +22,7 @@ BRF:4
 BRH:4
 end_of_record
 TN:
-SF:/Users/joan/Documents/code/joantolos/kata-code-jam/array-sorting/src/sorter.provider.ts
+SF:/Users/joan/Documents/code/joantolos/kata-code-jam/table-manager/src/sorter.provider.ts
 FN:5,(anonymous_0)
 FN:9,(anonymous_1)
 FN:11,(anonymous_2)
@@ -78,7 +78,7 @@ BRF:15
 BRH:13
 end_of_record
 TN:
-SF:/Users/joan/Documents/code/joantolos/kata-code-jam/array-sorting/src/table-manager.provider.ts
+SF:/Users/joan/Documents/code/joantolos/kata-code-jam/table-manager/src/table-manager.provider.ts
 FN:9,(anonymous_0)
 FN:14,(anonymous_1)
 FNF:2

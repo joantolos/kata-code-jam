@@ -5,7 +5,7 @@ export class Paginator {
 
   paginate(records, hits, offset) {
     if (this.isPaginationAllowed(hits, offset)) {
-      return records.slice(offset, hits + offset);
+      return records.slice(offset, ((hits * 1) + (offset * 1)));
     }
     return records;
   }
