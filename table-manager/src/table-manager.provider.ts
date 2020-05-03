@@ -1,18 +1,18 @@
-import {Sorter} from './sorter.provider';
-import {Paginator} from './paginator.provider';
+import {Sorting} from './sorting.provider';
+import {Pagination} from './pagination.provider';
 
 export class TableManager {
 
-  private sorter: Sorter;
-  private paginator: Paginator;
+  private sorting: Sorting;
+  private pagination: Pagination;
 
   constructor() {
-    this.sorter = new Sorter();
-    this.paginator = new Paginator();
+    this.sorting = new Sorting();
+    this.pagination = new Pagination();
   }
 
   arrange(records: any[], hits: number, offset: number, sortBy: string) {
-    return this.paginator.paginate(this.sorter.applyOrder(records, sortBy), hits, offset);
+    return this.pagination.paginate(this.sorting.sort(records, sortBy), hits, offset);
   }
 
 }

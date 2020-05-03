@@ -1,4 +1,4 @@
-export class Sorter {
+export class Sorting {
 
   private readonly defaultOrder: [];
 
@@ -6,7 +6,7 @@ export class Sorter {
     this.defaultOrder = defaultOrder ? defaultOrder : ['name:asc', 'quantity:desc', 'color:asc'];
   }
 
-  applyOrder(records, order) {
+  sort(records, order) {
     const orders = order ? order.split(',') : this.defaultOrder;
     const ordersKey = orders.map(key => key.split(':')[0]);
     const ordersDirection = orders.map(key => key.split(':')[1]);

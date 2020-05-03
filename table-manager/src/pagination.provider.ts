@@ -1,4 +1,4 @@
-export class Paginator {
+export class Pagination {
 
   constructor() {
   }

@@ -1,12 +1,12 @@
 // @ts-ignore
-import {Sorter} from '../src/sorter.provider';
+import {Sorting} from '../src/sorting.provider';
 
-let sorter: Sorter;
+let sorting: Sorting;
 let fruits;
 
 describe('Sorter', () => {
   beforeEach(() => {
-    sorter = new Sorter();
+    sorting = new Sorting();
     fruits = [
       {
         name: 'Apple',
@@ -37,17 +37,17 @@ describe('Sorter', () => {
   });
 
   it('should be created', () => {
-    expect(sorter).not.toBeUndefined();
+    expect(sorting).not.toBeUndefined();
   });
 
   it('should sort by dynamic list of columns ascending and descending with no repeats', () => {
-    const fruitsSortedByQuantityAsc = sorter.applyOrder(fruits, 'quantity:asc');
+    const fruitsSortedByQuantityAsc = sorting.sort(fruits, 'quantity:asc');
     expect(fruitsSortedByQuantityAsc[0].name).toBe('Apple');
     expect(fruitsSortedByQuantityAsc[1].name).toBe('Orange');
     expect(fruitsSortedByQuantityAsc[2].name).toBe('Apple');
     expect(fruitsSortedByQuantityAsc[3].name).toBe('Tomato');
 
-    const fruitsSortedByQuantity = sorter.applyOrder(fruits, 'quantity:desc');
+    const fruitsSortedByQuantity = sorting.sort(fruits, 'quantity:desc');
     expect(fruitsSortedByQuantity[0].name).toBe('apple');
     expect(fruitsSortedByQuantity[1].name).toBe('Tomato');
     expect(fruitsSortedByQuantity[2].name).toBe('Orange');
@@ -55,13 +55,13 @@ describe('Sorter', () => {
   });
 
   it('should sort by dynamic list of columns ascending and descending with repeats', () => {
-    const nameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:asc');
+    const nameWithAscendantQuantityTieBreaker = sorting.sort(fruits, 'name:asc,quantity:asc');
     expect(nameWithAscendantQuantityTieBreaker[0].name).toBe('Apple');
     expect(nameWithAscendantQuantityTieBreaker[0].quantity).toBe(2);
     expect(nameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
     expect(nameWithAscendantQuantityTieBreaker[1].quantity).toBe(3);
 
-    const nameWithDescendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:desc');
+    const nameWithDescendantQuantityTieBreaker = sorting.sort(fruits, 'name:asc,quantity:desc');
     expect(nameWithDescendantQuantityTieBreaker[0].name).toBe('apple');
     expect(nameWithDescendantQuantityTieBreaker[0].quantity).toBe(7);
     expect(nameWithDescendantQuantityTieBreaker[1].name).toBe('Apple');
@@ -69,7 +69,7 @@ describe('Sorter', () => {
   });
 
   it('should sort by dynamic list of columns ascending and descending with repeats, ignoring case', () => {
-    const noCaseNameWithAscendantQuantityTieBreaker = sorter.applyOrder(fruits, 'name:asc,quantity:desc,color:asc');
+    const noCaseNameWithAscendantQuantityTieBreaker = sorting.sort(fruits, 'name:asc,quantity:desc,color:asc');
     expect(noCaseNameWithAscendantQuantityTieBreaker[0].name).toBe('apple');
     expect(noCaseNameWithAscendantQuantityTieBreaker[0].quantity).toBe(7);
     expect(noCaseNameWithAscendantQuantityTieBreaker[1].name).toBe('Apple');
@@ -79,7 +79,7 @@ describe('Sorter', () => {
   });
 
   it('should sort by dynamic list of columns by default sorting', () => {
-    const defaultSorting = sorter.applyOrder(fruits, null);
+    const defaultSorting = sorting.sort(fruits, null);
     expect(defaultSorting[0].name).toBe('apple');
     expect(defaultSorting[0].quantity).toBe(7);
     expect(defaultSorting[1].name).toBe('Apple');

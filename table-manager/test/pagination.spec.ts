@@ -1,12 +1,12 @@
 // @ts-ignore
-import { Paginator } from '../src/paginator.provider';
+import { Pagination } from '../src/Pagination.provider';
 
-let paginator: Paginator;
+let pagination: Pagination;
 let fruits;
 
-describe('Paginator', () => {
+describe('pagination', () => {
   beforeEach(() => {
-    paginator = new Paginator();
+    pagination = new Pagination();
     fruits = [
       {
         name: 'Apple'
@@ -30,25 +30,25 @@ describe('Paginator', () => {
   });
 
   it('should be created', () => {
-    expect(paginator).not.toBeUndefined();
+    expect(pagination).not.toBeUndefined();
   });
 
   it('should retrieve page 2', () => {
-    const page2 = paginator.paginate(fruits, 2, 2);
+    const page2 = pagination.paginate(fruits, 2, 2);
     expect(page2[0].name).toBe('Orange');
     expect(page2[1].name).toBe('Apple');
     expect(page2.length).toBe(2);
   });
 
   it('should retrieve page 3', () => {
-    const page3 = paginator.paginate(fruits, 2, 4);
+    const page3 = pagination.paginate(fruits, 2, 4);
     expect(page3[0].name).toBe('Mango');
     expect(page3[1].name).toBe('Pear');
     expect(page3.length).toBe(2);
   });
 
   it('should leave the list alone when no page required', () => {
-    const originalFruits = paginator.paginate(fruits, null, null);
+    const originalFruits = pagination.paginate(fruits, null, null);
     expect(originalFruits.length).toBe(6);
   });
 
