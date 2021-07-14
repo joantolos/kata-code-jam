@@ -1,5 +1,5 @@
 // @ts-ignore
-import { Pagination } from '../src/Pagination.provider';
+import { Pagination } from './pagination.provider';
 
 let pagination: Pagination;
 let fruits;

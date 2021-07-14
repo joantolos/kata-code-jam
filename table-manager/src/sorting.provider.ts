@@ -1,17 +1,29 @@
 export class Sorting {
 
-  private readonly defaultOrder: [];
-
-  constructor(defaultOrder?) {
-    this.defaultOrder = defaultOrder ? defaultOrder : ['name:asc', 'quantity:desc', 'color:asc'];
+  constructor() {
   }
 
   sort(records, order) {
-    const orders = order ? order.split(',') : this.defaultOrder;
+    const orders = order.split(',');
     const ordersKey = orders.map(key => key.split(':')[0]);
     const ordersDirection = orders.map(key => key.split(':')[1]);
-    return records.sort((record, nextRecord) => this.compare(record, nextRecord, ordersKey, ordersDirection));
+    let extraOrderKey;
+
+    ordersKey.forEach(key => {
+      if (key.includes('.')) {
+        extraOrderKey = key.replace('.', '');
+        ordersKey.push(extraOrderKey);
+        ordersDirection.push(ordersDirection[ordersKey.findIndex((orderKey) => orderKey === key)]);
+        records.forEach(record => record[extraOrderKey] = record[key.split('.')[0]].map(parents => parents[key.split('.')[1]]).join().replace(/,/g, ''));
+      }
+    });
+    const sortedRecords = records.sort((record, nextRecord) => this.compare(record, nextRecord, ordersKey, ordersDirection));
+    if (extraOrderKey) {
+      sortedRecords.forEach(record => delete record[extraOrderKey]);
+    }
+    return sortedRecords;
   }
+
   private compare(record, nextRecord, ordersKey, ordersDirection, index: number = 0) {
     const currentKey = ordersKey[index];
     const currentDirection = ordersDirection[index];

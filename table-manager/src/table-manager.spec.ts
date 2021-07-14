@@ -1,5 +1,5 @@
 // @ts-ignore
-import {TableManager} from '../src/table-manager.provider';
+import {TableManager} from './table-manager.provider';
 
 let tableArrangement: TableManager;
 let fruits: any[];
