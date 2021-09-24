@@ -7,4 +7,5 @@ include 'star-wars',
         'barcelona-grand-prix',
         'group-by',
         'uuid',
-        'array-pagination'
+        'array-pagination',
+        'two-sum'
