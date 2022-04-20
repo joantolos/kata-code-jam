@@ -1,14 +1,13 @@
 package com.joantolos.kata.code.jam.star.wars
 
-import com.joantolos.kata.code.jam.star.wars.SorterProvider
 import spock.lang.Shared
 import spock.lang.Specification
 
 class SortSpec extends Specification {
 
-    @Shared SorterProvider sorter
+    @Shared Sorter sorter
     def setupSpec() {
-        sorter = new SorterProvider()
+        sorter = new Sorter()
     }
 
     def 'Should sort one array by another one defining the order'() {

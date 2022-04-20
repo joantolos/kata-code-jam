@@ -12,7 +12,7 @@ const parseMeetUp = (rawMeetUp) => {
 };
 
 function parseEdition(rawMeetUp) {
-  return (rawMeetUp.edition ? rawMeetUp.edition + ' ' : '');
+  return rawMeetUp.edition ? rawMeetUp.edition + ' ' : '';
 }
 
 function parseDates(rawMeetUp) {
@@ -22,9 +22,9 @@ function parseDates(rawMeetUp) {
 }
 
 function parseMeetUpLocation(location) {
-  if(location.length > 1) {
-    if(location[0].split(', ')[1] === location[1].split(', ')[1]){
-      return (location[0] + location[1].replace(' · ', ' | ')).replace((', ' + location[0].split(', ')[1]), '');
+  if (location.length > 1) {
+    if (location[0].split(', ')[1] === location[1].split(', ')[1]) {
+      return (location[0] + location[1].replace(' · ', ' | ')).replace(', ' + location[0].split(', ')[1], '');
     } else {
       return location[0] + location[1].replace(' · ', ' | ');
     }

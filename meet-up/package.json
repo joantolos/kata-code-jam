@@ -1,7 +1,7 @@
 {
-  "name": "meet-up-parser",
+  "name": "meet-up",
   "version": "1.0.0",
-  "description": "Parsing a JSON into another with Javascro``",
+  "description": "Json parser implemented in Javascript",
   "main": "index.js",
   "scripts": {
     "test": "mocha src/**/*.spec.js"

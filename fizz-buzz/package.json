@@ -1,7 +1,7 @@
 {
-  "name": "meet-up-parser",
+  "name": "fizz-buzz-base",
   "version": "1.0.0",
-  "description": "Parsing a JSON into another with Javascro``",
+  "description": "FizzBuzz implemented in Javascript with TDD",
   "main": "index.js",
   "scripts": {
     "test": "mocha src/**/*.spec.js"
