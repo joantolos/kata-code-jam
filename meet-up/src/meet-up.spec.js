@@ -10,7 +10,7 @@ describe('Meet up parse', function () {
     assert.equal(meetUp.parse(input)[4].split(' · ')[0], 'Upfront Summit');
   })
 
-  it('should parse meet up date', function () {
+  it('should parse date', function () {
     assert.equal(meetUp.parse(input)[0].split(' ·')[1], ' 2018-06-11 / 2018-06-13');
     assert.equal(meetUp.parse(input)[4].split(' ·')[1], ' 2018-02-01');
   })
@@ -24,6 +24,10 @@ describe('Meet up parse', function () {
 
   it('should parse more than one location', function () {
     assert.equal(meetUp.parse(input)[3].split(' ·')[2], ' Paris, France | Madrid, Spain');
+  })
+
+  it('should parse more than one location at the same country', function () {
+    assert.equal(meetUp.parse(input)[2].split(' ·')[2], ' Bucharest | Maramures, Romania');
   })
 
 })
