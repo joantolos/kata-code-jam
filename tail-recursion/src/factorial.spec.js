@@ -14,7 +14,7 @@ describe('Factorial', function () {
   })
 
   it('should calculate factorial of five with tail recursion', function () {
-    assert.equal(factorial.tailRecursion(5), 120);
+    assert.equal(factorial.tailRecursion(5, 1), 120);
   })
 
 })
