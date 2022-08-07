@@ -7,13 +7,33 @@ function noRecursion(num) {
   return factorial;
 }
 
+// recursion(5)
+// 5 * recursion(4)
+// 5 * (4 * recursion(3))
+// 5 * (4 * (3 * recursion(2)))
+// 5 * (4 * (3 * (2 * recursion(1))))
+// 5 * (4 * (3 * (2 * (1 * recursion(0)))))
+// 5 * (4 * (3 * (2 * (1 * 1))))
+// 5 * (4 * (3 * (2 * 1)))
+// 5 * (4 * (3 * 2))
+// 5 * (4 * 6)
+// 5 * 24
+// 120
 function recursion(num) {
-  if (num === 1) return 1;
+  if (num === 0) return 1;
   return num * recursion(num - 1);
 }
 
+// tailRecursion(5, 1)
+// tailRecursion(4, 1 * 5)
+// tailRecursion(3, 5 * 4)
+// tailRecursion(2, 20 * 3)
+// tailRecursion(1, 60 * 2)
+// tailRecursion(0, 120 * 1)
+// 120
 function tailRecursion(num, partialFactorial) {
-  if (num === 1) {
+  // console.log('tailRecursion(' + (num - 1) + ', ' + partialFactorial + ' * ' + num + ')');
+  if (num === 0) {
     return partialFactorial;
   } else {
     return tailRecursion(num - 1, partialFactorial * num);
