@@ -1,0 +1,19 @@
+{
+  "name": "factorial",
+  "version": "1.0.0",
+  "description": "Tail recursion example using factorial problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/**/*.spec.js"
+  },
+  "keywords": [
+    "tdd",
+    "recursion",
+    "factorial"
+  ],
+  "author": "Joan Tolós",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.1.3"
+  }
+}

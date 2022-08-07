@@ -1,0 +1,17 @@
+group 'com.joantolos.kata.code.jam'
+
+apply plugin: 'java'
+apply plugin: "groovy"
+apply plugin: "jacoco"
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    testImplementation group: 'org.spockframework', name: 'spock-core', version: '2.2-M3-groovy-4.0'
+}

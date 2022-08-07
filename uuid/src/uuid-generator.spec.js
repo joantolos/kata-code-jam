@@ -1,4 +1,4 @@
-const uuidGenerator = require('../src/uuid-generator');
+const uuidGenerator = require('./uuid-generator');
 const chai = require('chai');
 const expect = chai.expect;
 const uuidRegexValidator = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;

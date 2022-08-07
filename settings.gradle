@@ -1,11 +1,16 @@
 rootProject.name = 'kata-code-jam'
 
-include 'star-wars',
-        'bubble-sort',
-        'book-quote-builder',
-        'meet-up-parser',
+include 'array-pagination',
         'barcelona-grand-prix',
+        'book-quote-builder',
+        'bubble-sort',
+        'fizz-buzz',
         'group-by',
-        'uuid',
-        'array-pagination',
+        'meet-up',
+        'meet-up-parser',
+        'override-polymorphism',
+        'star-wars',
+        'table-manager',
+        'tail-recursion',
         'two-sum'
+        'uuid'
