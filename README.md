@@ -16,9 +16,9 @@ These are a compilation of several code exercises that I have found interesting.
 - [_UUID Javascript_][7] - UUID generation with Javascript
 - [_Array pagination_][8] - Pagination simulation of an array with Javascript
 - [_Table manager_][9] - Sorting and table pagination simulation of an array with Typescript
-- [_Override polymorphism_][10] - Example of factory builder pattern and overriding polymorphism made on Typescript.
+- [_Override polymorphism_][10] - Example of overriding polymorphism made on Typescript.
 - [_Fizz Buzz_][11] - Fizz Buzz in Javascript with TDD
-- [_Two sum_][12] - Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+- [_Two sum_][12] - Return indices of the two numbers such that they add up to target.
 
 [1]: https://github.com/joantolos/kata-code-jam/tree/master/bubble-sort
 [2]: https://github.com/joantolos/kata-code-jam/tree/master/star-wars
