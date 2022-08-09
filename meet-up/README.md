@@ -125,3 +125,13 @@ Iterating the result list, we can build the proper html:
     </ul>
 
 Write a function on whatever language you prefer that given the first array, it returns the second one.
+
+## How to:
+
+Install the dependencies:
+
+    yarn install
+
+Run the tests:
+
+    yarn test

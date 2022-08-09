@@ -4,8 +4,18 @@
 
 These are a compilation of several code exercises that I find interesting.
 
+- Exercises solved in Java will require at least Java 17 to run
+- Exercises solved in Javascript, Typescript or node, will require yarn or npm installed
+
 ## Exercises
 
+- [_Binary Search_][15] - Searching a number in an array of numbers.
+- [_Add Two Numbers_][14] - Sum two numbers as a linked list.
+- [_Palindrome Number_][16] - Given an integer x, return true if x is palindrome integer.
+- [_Reverse Integer_][17] - Given a signed 32-bit integer x, return x with its digits reversed.
+- [_Sort An Array_][18] - Given an array of integers nums, sort the array in ascending order.
+- [_Three Sum_][19] - Given an integer array nums, return all the triplets that sum zero.
+- [_Union Find_][20] - Union find is a possible solution for the dynamic connectivity problem.
 - [_Bubble Sort Algorithm_][1] - Implementation of the Bubble Sort Algorithm.
 - [_Star Wars Movies Order_][2] - Ordering the Star Wars movies from the release date to chronologically.
 - [_Book Quote Builder_][3] - JSON manipulation casuistic with Javascript
@@ -33,3 +43,10 @@ These are a compilation of several code exercises that I find interesting.
 [11]: https://github.com/joantolos/kata-code-jam/tree/master/fizz-buzz
 [12]: https://github.com/joantolos/kata-code-jam/tree/master/two-sum
 [13]: https://github.com/joantolos/kata-code-jam/tree/master/meet-up
+[14]: https://github.com/joantolos/kata-code-jam/tree/master/add-two-numbers
+[15]: https://github.com/joantolos/kata-code-jam/tree/master/binary-search
+[16]: https://github.com/joantolos/kata-code-jam/tree/master/palindrome-number
+[17]: https://github.com/joantolos/kata-code-jam/tree/master/reverse-integer
+[18]: https://github.com/joantolos/kata-code-jam/tree/master/sort-an-array
+[19]: https://github.com/joantolos/kata-code-jam/tree/master/three-sum
+[20]: https://github.com/joantolos/kata-code-jam/tree/master/union-find

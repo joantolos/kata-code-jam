@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.joantolos.three.sum.ThreeSumTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-08-09T14:29:05" hostname="joans-macbook-pro-2.home" time="0.008">
+  <properties/>
+  <testcase name="shouldComplyWithExampleThree" classname="com.joantolos.three.sum.ThreeSumTest" time="0.006"/>
+  <testcase name="shouldComplyWithExampleFour" classname="com.joantolos.three.sum.ThreeSumTest" time="0.0"/>
+  <testcase name="shouldComplyWithExampleOne" classname="com.joantolos.three.sum.ThreeSumTest" time="0.0"/>
+  <testcase name="shouldComplyWithExampleTwo" classname="com.joantolos.three.sum.ThreeSumTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

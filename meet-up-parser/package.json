@@ -1,7 +1,7 @@
 {
   "name": "meet-up-parser",
   "version": "1.0.0",
-  "description": "Parsing a JSON into another with Javascro``",
+  "description": "Parsing a JSON into another with Javascript``",
   "main": "index.js",
   "scripts": {
     "test": "mocha src/**/*.spec.js"
@@ -14,6 +14,7 @@
   "author": "Joan Tolós",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.3.6",
     "mocha": "^9.1.3"
   }
 }

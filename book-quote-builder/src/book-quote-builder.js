@@ -1,5 +1,5 @@
 const createQuotes = (input) => {
-  return {quotes : input.input.map(parseQuote)};
+  return { quotes: input.input.map(parseQuote) };
 };
 
 const parseQuote = (rawQuote) => {

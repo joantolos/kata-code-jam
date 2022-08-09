@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.joantolos.sort.SortAnArrayTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-07-15T10:43:11" hostname="Joans-MacBook-Pro.local" time="0.004">
+  <properties/>
+  <testcase name="shouldSwapTwoElementsOnAnArrayByIndex" classname="com.joantolos.sort.SortAnArrayTest" time="0.003"/>
+  <testcase name="shouldSortWithInsertionSort" classname="com.joantolos.sort.SortAnArrayTest" time="0.0"/>
+  <testcase name="shouldSortWithSelectionSort" classname="com.joantolos.sort.SortAnArrayTest" time="0.0"/>
+  <testcase name="shouldSwapTwoElementsOnAnArrayByElement" classname="com.joantolos.sort.SortAnArrayTest" time="0.0"/>
+  <testcase name="shouldSortWithShellSort" classname="com.joantolos.sort.SortAnArrayTest" time="0.0"/>
+  <testcase name="shouldCheckIfArrayIsSorted" classname="com.joantolos.sort.SortAnArrayTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

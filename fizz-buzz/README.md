@@ -6,3 +6,13 @@ Print the first 100 numbers with the following constraints:
 * Print “Buzz” if the number is divisible by 5
 * Print “FizzBuzz” if the number is divisible by 3 and 5
 * Print the number if no other requirement is fulfilled
+
+## How to:
+
+Install the dependencies:
+
+    yarn install
+
+Run the tests:
+
+    yarn test

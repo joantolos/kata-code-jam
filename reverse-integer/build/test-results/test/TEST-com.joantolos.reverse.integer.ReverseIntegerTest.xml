@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.joantolos.reverse.integer.ReverseIntegerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-08-09T14:25:24" hostname="joans-macbook-pro-2.home" time="0.01">
+  <properties/>
+  <testcase name="shouldComplyWithExampleThree" classname="com.joantolos.reverse.integer.ReverseIntegerTest" time="0.005"/>
+  <testcase name="shouldComplyWithExampleFour" classname="com.joantolos.reverse.integer.ReverseIntegerTest" time="0.001"/>
+  <testcase name="shouldComplyWithExampleOne" classname="com.joantolos.reverse.integer.ReverseIntegerTest" time="0.001"/>
+  <testcase name="shouldComplyWithExampleTwo" classname="com.joantolos.reverse.integer.ReverseIntegerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

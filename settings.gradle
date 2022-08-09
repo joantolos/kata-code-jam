@@ -14,4 +14,10 @@ include 'array-pagination',
         'tail-recursion',
         'two-sum',
         'uuid',
-        'add-two-numbers'
+        'add-two-numbers',
+        'binary-search',
+        'palindrome-number',
+        'reverse-integer',
+        'sort-an-array',
+        'three-sum',
+        'union-find'
