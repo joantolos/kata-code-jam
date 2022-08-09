@@ -2,7 +2,7 @@
 
 ![Kata](kata.gif)
 
-These are a compilation of several code exercises that I have found interesting.
+These are a compilation of several code exercises that I find interesting.
 
 ## Exercises
 

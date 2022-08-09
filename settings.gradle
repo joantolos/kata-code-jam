@@ -12,5 +12,5 @@ include 'array-pagination',
         'star-wars',
         'table-manager',
         'tail-recursion',
-        'two-sum'
+        'two-sum',
         'uuid'

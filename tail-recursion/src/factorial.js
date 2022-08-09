@@ -7,6 +7,7 @@ function noRecursion(num) {
   return factorial;
 }
 
+// Stack trace detail:
 // recursion(5)
 // 5 * recursion(4)
 // 5 * (4 * recursion(3))
@@ -24,6 +25,7 @@ function recursion(num) {
   return num * recursion(num - 1);
 }
 
+// Stack trace detail:
 // tailRecursion(5, 1)
 // tailRecursion(4, 1 * 5)
 // tailRecursion(3, 5 * 4)
