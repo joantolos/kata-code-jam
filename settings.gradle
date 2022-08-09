@@ -13,4 +13,5 @@ include 'array-pagination',
         'table-manager',
         'tail-recursion',
         'two-sum',
-        'uuid'
+        'uuid',
+        'add-two-numbers'
