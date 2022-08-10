@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="union.find.UnionFindTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-07-13T15:17:29" hostname="Joans-MacBook-Pro.local" time="0.002">
+<testsuite name="union.find.UnionFindTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-08-10T14:02:01" hostname="joans-macbook-pro-2.home" time="0.004">
   <properties/>
-  <testcase name="nineAndEightShouldBeConnected" classname="union.find.UnionFindTest" time="0.001"/>
+  <testcase name="nineAndEightShouldBeConnected" classname="union.find.UnionFindTest" time="0.002"/>
   <testcase name="twoAndNineShouldNotBeConnected" classname="union.find.UnionFindTest" time="0.0"/>
-  <testcase name="twoAndSevenShouldBeConnected" classname="union.find.UnionFindTest" time="0.001"/>
+  <testcase name="threeAndNineShouldBeConnected" classname="union.find.UnionFindTest" time="0.0"/>
+  <testcase name="twoAndSevenShouldBeConnected" classname="union.find.UnionFindTest" time="0.0"/>
   <testcase name="sixAndSevenShouldNotBeConnected" classname="union.find.UnionFindTest" time="0.0"/>
   <testcase name="threeAndEightShouldBeConnected" classname="union.find.UnionFindTest" time="0.0"/>
   <testcase name="threeAndFourShouldBeConnected" classname="union.find.UnionFindTest" time="0.0"/>

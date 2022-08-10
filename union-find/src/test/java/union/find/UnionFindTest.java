@@ -55,6 +55,11 @@ public class UnionFindTest {
     }
 
     @Test
+    public void threeAndNineShouldBeConnected() {
+        Assert.assertTrue(unionFind.connected(3, 9));
+    }
+
+    @Test
     public void sixAndSevenShouldNotBeConnected() {
         Assert.assertFalse(unionFind.connected(6, 7));
     }
