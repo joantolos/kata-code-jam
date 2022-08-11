@@ -3,7 +3,10 @@ package com.joantolos.binary.search.tree;
 public class BinarySearchTree {
 
     public boolean isValidBST(TreeNode root) {
-        return false;
+        if (root.left == null || root.right == null || root.left.val > root.val || root.right.val < root.val || !isValidBST(root.left) || !isValidBST(root.right)) {
+            return false;
+        }
+        return true;
     }
 
     static class TreeNode {
