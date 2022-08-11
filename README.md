@@ -10,10 +10,13 @@ These are a compilation of several code exercises that I find interesting.
 ## Exercises
 
 - [_Binary Search_][15] - Searching a number in an array of numbers.
+- [_Binary Search Tree_][21] - Given the root of a binary tree, determine if it is a valid binary search tree (BST).
 - [_Add Two Numbers_][14] - Sum two numbers as a linked list.
 - [_Palindrome Number_][16] - Given an integer x, return true if x is palindrome integer.
 - [_Reverse Integer_][17] - Given a signed 32-bit integer x, return x with its digits reversed.
 - [_Sort An Array_][18] - Given an array of integers nums, sort the array in ascending order.
+- [_Valid Sudoku_][22] - Determine if a 9 x 9 Sudoku board is valid.
+- [_Sudoky Solver_][23] - Write a program to solve a Sudoku puzzle by filling the empty cells.
 - [_Three Sum_][19] - Given an integer array nums, return all the triplets that sum zero.
 - [_Union Find_][20] - Union find is a possible solution for the dynamic connectivity problem.
 - [_Bubble Sort Algorithm_][1] - Implementation of the Bubble Sort Algorithm.
@@ -50,3 +53,6 @@ These are a compilation of several code exercises that I find interesting.
 [18]: https://github.com/joantolos/kata-code-jam/tree/master/sort-an-array
 [19]: https://github.com/joantolos/kata-code-jam/tree/master/three-sum
 [20]: https://github.com/joantolos/kata-code-jam/tree/master/union-find
+[21]: https://github.com/joantolos/kata-code-jam/tree/master/binary-search-tree
+[22]: https://github.com/joantolos/kata-code-jam/tree/master/valid-sudoku
+[23]: https://github.com/joantolos/kata-code-jam/tree/master/sudoku-solver

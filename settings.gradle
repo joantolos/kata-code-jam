@@ -20,4 +20,7 @@ include 'array-pagination',
         'reverse-integer',
         'sort-an-array',
         'three-sum',
-        'union-find'
+        'union-find',
+        'binary-search-tree',
+        'valid-sudoku',
+        'sudoku-solver'
