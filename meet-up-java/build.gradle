@@ -1,0 +1,19 @@
+group 'com.joantolos.kata.code.jam'
+
+apply plugin: 'java'
+apply plugin: "groovy"
+apply plugin: "jacoco"
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.14.1'
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.1'
+}
