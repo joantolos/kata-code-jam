@@ -24,6 +24,7 @@ These are a compilation of several code exercises that I find interesting.
 - [_Book Quote Builder_][3] - JSON manipulation casuistic with Javascript
 - [_Meet Up Parser_][4] - Another JSON manipulation casuistic with Javascript
 - [_Meet Up_][13] - Meet up parser optimisation
+- [_Meet Up_][24] - Meet up parser implemented in Java
 - [_Barcelona Grand Prix_][5] - Yet another JSON manipulation casuistic with Javascript
 - [_Grouping By_][6] - Using Collectors from Stream API
 - [_UUID Javascript_][7] - UUID generation with Javascript
@@ -56,3 +57,4 @@ These are a compilation of several code exercises that I find interesting.
 [21]: https://github.com/joantolos/kata-code-jam/tree/master/binary-search-tree
 [22]: https://github.com/joantolos/kata-code-jam/tree/master/valid-sudoku
 [23]: https://github.com/joantolos/kata-code-jam/tree/master/sudoku-solver
+[24]: https://github.com/joantolos/kata-code-jam/tree/master/meet-up-java
