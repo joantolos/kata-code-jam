@@ -16,6 +16,7 @@ These are a compilation of several code exercises that I find interesting.
 - [_Reverse Integer_][17] - Given a signed 32-bit integer x, return x with its digits reversed.
 - [_Sort An Array_][18] - Given an array of integers nums, sort the array in ascending order.
 - [_Valid Sudoku_][22] - Determine if a 9 x 9 Sudoku board is valid.
+- [_Array Multiply_][25] - Each element of the array is the result of the multiplication of all the others.
 - [_Sudoky Solver_][23] - Write a program to solve a Sudoku puzzle by filling the empty cells.
 - [_Three Sum_][19] - Given an integer array nums, return all the triplets that sum zero.
 - [_Union Find_][20] - Union find is a possible solution for the dynamic connectivity problem.
@@ -58,3 +59,4 @@ These are a compilation of several code exercises that I find interesting.
 [22]: https://github.com/joantolos/kata-code-jam/tree/master/valid-sudoku
 [23]: https://github.com/joantolos/kata-code-jam/tree/master/sudoku-solver
 [24]: https://github.com/joantolos/kata-code-jam/tree/master/meet-up-java
+[25]: https://github.com/joantolos/kata-code-jam/tree/master/array-multiply
